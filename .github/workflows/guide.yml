@@ -24,4 +24,4 @@ jobs:
           aws-region: ap-northeast-2
       - name: upload
         run: |
-          aws s3 sync s3://action-test
+          aws s3 sync . s3://action-test

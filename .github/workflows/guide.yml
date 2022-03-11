@@ -23,4 +23,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_ACCESS_KEY }}
           aws-region: ap-northeast-2
       - name: upload
+        run: |
           aws s3 sync ./dist s3://action-test

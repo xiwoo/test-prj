@@ -19,6 +19,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_ACCESS_KEY }}
           AWS_REGION: 
         run: |
-          aws s3 sync \
-            --recursive \
-            ./dist s3://action-test
+          aws s3 sync ./dist s3://action-test

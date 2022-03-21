@@ -21,4 +21,4 @@ jobs:
           aws-region: ap-northeast-2
       - name: S3 Sync
         run: |
-          aws s3 sync . s3://action-test
+          aws s3 sync . s3://publishing.devxiwoo.com
